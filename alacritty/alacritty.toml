@@ -1,0 +1,13 @@
+[general]
+
+import = ["/home/skulix/.config/alacritty/gruvbox-dark.toml"]
+
+[window]
+padding = {x = 10, y = 10}
+
+[font]
+normal = {family = "Dank Mono Nerd Font", style = "Regular"}
+size = 14
+
+[terminal]
+shell = "/usr/bin/fish"

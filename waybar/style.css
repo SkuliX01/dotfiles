@@ -1,0 +1,72 @@
+/* --- Gruvbox Dark --- */
+@define-color bg #282828;
+@define-color bg-alt #32302f;
+@define-color fg #ebdbb2;
+
+@define-color yellow #d79921;
+@define-color aqua #689d6a;
+@define-color blue #458588;
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "Dank Mono Nerd Font Regular";
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: @bg;
+    color: @fg;
+}
+
+/* --- Workspaces --- */
+
+#workspaces {
+    margin-left: 10px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #7c6f64;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: @yellow;
+}
+
+#workspaces button:hover {
+    background: @bg-alt;
+    color: @fg;
+}
+
+/* --- Clock --- */
+
+#clock {
+    color: @fg;
+}
+
+/* --- Right Modules --- */
+
+#cpu,
+#memory,
+#battery {
+    background: @bg-alt;
+    padding: 0 10px;
+    margin: 6px 6px;
+    border-radius: 6px;
+}
+
+#cpu {
+    color: @yellow;
+}
+
+#memory {
+    color: @blue;
+}
+
+#battery {
+    color: @aqua;
+}
